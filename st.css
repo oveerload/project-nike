@@ -1,0 +1,450 @@
+:root {
+  --background-hero: url("./img/fon1.webp");
+  --background-order: url("./img/fon4.webp");
+  --primary-color: #fff;
+  --secondary-color: #d4af37;
+  --button-background: #8a2be2;
+  --button-hover-background: #5a189a;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #2a2a72;
+  color: var(--primary-color);
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a4f;
+  /* width: 100%; */
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.hero {
+  text-align: left;
+  padding: 100px 20px;
+  /* width: 100%; */
+  background-image: url(./img/fon1.webp);
+  height: 858px;
+}
+
+.hero h1,
+.hero h2 {
+  margin: 0;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--button-background);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-background);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a4f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 105px;
+  padding-bottom: 105px;
+  border-bottom: 1px solid white;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-item img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.feature-item h3 {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+}
+
+.order {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--background-order) no-repeat center center/cover;
+  width: 100%;
+  background-image: url(./img/fon\ 4\ 1.webp);
+  /* Order */
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.order h2 {
+  margin-bottom: 20px;
+}
+
+.order form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+}
+
+.order form button {
+  padding: 10px 20px;
+  background-color: var(--button-background);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order form button:hover {
+  background-color: var(--button-hover-background);
+}
+
+footer {
+  background-color: #000033; /* Темно-синій фон */
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-questions,
+.footer-emails {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-questions p,
+.footer-emails p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-logo img {
+  height: 30px;
+  filter: brightness(0) invert(1); /* Робить логотип білим */
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-top: 10px;
+  }
+}
+
+.p {
+  width: 508px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.ulul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--button-background);
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.feature-item:first-child {
+  border-right: 2px solid;
+}
+
+.feature-item:last-child {
+  border-left: 2px solid;
+}
+
+.qwerty {
+  background-image: url(./img/fon3.webp);
+}
+
+.order-form {
+  background-color: #04316a;
+  border-radius: 15px;
+  padding: 20px;
+
+  text-align: center;
+  color: white;
+}
+/* .order-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+} */
+
+.email {
+  width: 690px;
+}
+
+.div {
+  height: 292px;
+  width: 255px;
+  display: flex;
+}
+
+.section-3 {
+  padding-top: 25px;
+  padding-bottom: 115px;
+  background-image: url(./img/flowers.webp), url(./img/baground-s3.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  border-bottom: 1px solid white;
+}
+.s3-h2 {
+  /* Reviews */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.s3-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.s3-li {
+  width: 255px;
+  /* height: 350px; */
+}
+.s3-li-1 {
+  border-radius: 15px;
+  box-shadow: 0px 30px 0px -13px rgb(83, 57, 120),
+    0px 14px 0px -5px rgb(123, 84, 179);
+  background: linear-gradient(
+    135deg,
+    rgb(0, 229, 230) 7.292%,
+    rgb(0, 168, 247) 26.042%,
+    rgb(154, 118, 249) 62.5%,
+    rgb(204, 94, 194) 100%
+  );
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 14px;
+  padding-left: 13px;
+}
+.s3-li-2 {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0px 30px 0px -13px rgb(97, 51, 124),
+    0px 14px 0px -5px rgb(145, 89, 177);
+  background: linear-gradient(
+    135deg,
+    rgb(255, 104, 180) 0%,
+    rgb(255, 69, 225) 26.042%,
+    rgb(206, 58, 255) 62.841%,
+    rgb(137, 97, 255) 100%
+  );
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 14px;
+  padding-left: 13px;
+}
+.s3-li-3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 14px;
+  padding-left: 13px;
+  border-radius: 15px;
+  box-shadow: 0px 30px 0px -13px rgb(115, 47, 38),
+    0px 14px 0px -5px rgb(185, 90, 76);
+  background: linear-gradient(
+    135deg,
+    rgb(255, 225, 40) 0%,
+    rgb(255, 155, 92) 30.208%,
+    rgb(255, 131, 129) 63.286%,
+    rgb(255, 84, 137) 100%
+  );
+}
+.s3-p {
+  /* Sneakers are very comfortable and well painted, nothing has worn off in a year. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.input.class {
+  width: 580px;
+}
+
+.divdiv {
+  position: relative;
+}
+
+.span {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  font-size: 100px;
+  /* Confirm */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #8d8d8d;
+}
+
+.group1 {
+  margin-top: 47px;
+  display: flex;
+}
+
+.group2 {
+  margin-left: 5px;
+}
+
+.form {
+  border-radius: 50px;
+  border-radius: 50px;
+}
+
+.stdv {
+  margin-bottom: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.divv {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.pp {
+  /* С&R */
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+
+  color: #ffffff;
+}
+
+.hh1 {
+  /* ColoRawe */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 192px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.ppp {
+  /* Your dream Nike */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 96px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.p {
+}
